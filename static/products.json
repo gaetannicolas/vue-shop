@@ -1,0 +1,131 @@
+[
+  {
+    "id": 1,
+    "name": "Khaki Suede Polish Work Boots",
+    "price": 149.99,
+    "category": "women",
+    "colors": ["red", "blue", "green"],
+    "sale": true,
+    "article": "shoe",
+    "img": [
+      "shoe1.png",
+      "jacket1.png",
+      "shoe1.png"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Camo Fang Backpack Jungle",
+    "price": 39.99,
+    "category": "women",
+    "colors": ["red", "blue", "green"],
+    "sale": false,
+    "article": "jacket",
+    "img": [
+      "jacket1.png",
+      "jacket2.png",
+      "jacket3.png",
+      "jacket4.png"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Parka and Quilted Liner Jacket",
+    "price": 49.99,
+    "category": "men",
+    "colors": ["red", "blue", "green"],
+    "sale": true,
+    "article": "jacket",
+    "img": ["jacket2.png"]
+  },
+  {
+    "id": 4,
+    "name": "Cotton Black Cap",
+    "price": 12.99,
+    "category": "men",
+    "colors": ["red", "blue", "green"],
+    "sale": true,
+    "article": "hats",
+    "img": ["hat1.png", "shirt1.png"]
+  },
+  {
+    "id": 5,
+    "name": "Knit Sweater with Zips",
+    "price": 29.99,
+    "category": "women",
+    "colors": ["red", "blue", "green"],
+    "sale": false,
+    "article": "sweater",
+    "img": ["sweater1.png", "sweater2.png"]
+  },
+  {
+    "id": 6,
+    "name": "Long Linen-blend Shirt",
+    "price": 18.99,
+    "category": "men",
+    "colors": ["red", "blue", "green"],
+    "sale": false,
+    "article": "shirt",
+    "img": ["shirt1.png"]
+  },
+  {
+    "id": 7,
+    "name": "Knit Orange Sweater",
+    "price": 28.99,
+    "category": "men",
+    "colors": ["red", "blue", "green"],
+    "sale": false,
+    "article": "sweater",
+    "img": ["sweater2.png"]
+  },
+  {
+    "id": 8,
+    "name": "Cotton Band-collar Blouse",
+    "price": 49.99,
+    "category": "men",
+    "colors": ["red", "blue", "green"],
+    "sale": false,
+    "article": "shirt",
+    "img": ["shirt2.png", "shirt1.png"]
+  },
+  {
+    "id": 9,
+    "name": "Camo Fang Backpack Jungle",
+    "price": 59.99,
+    "category": "women",
+    "colors": ["red", "blue", "green"],
+    "sale": true,
+    "article": "jacket",
+    "img": ["jacket3.png", "jacket4.png"]
+  },
+  {
+    "id": 10,
+    "name": "Golden Pilot Jacket",
+    "price": 129.99,
+    "category": "women",
+    "colors": ["red", "blue", "green"],
+    "sale": false,
+    "article": "jacket",
+    "img": ["jacket4.png", "jacket3.png"]
+  },
+  {
+    "id": 11,
+    "name": "Spotted Patterned Sweater",
+    "price": 80.99,
+    "category": "women",
+    "colors": ["red", "blue", "green"],
+    "sale": false,
+    "article": "jacket",
+    "img": ["sweater4.png", "sweater2.png", "sweater5.png"]
+  },
+  {
+    "id": 12,
+    "name": "Double Knit Sweater",
+    "price": 59.99,
+    "category": "men",
+    "colors": ["red", "blue", "green"],
+    "sale": true,
+    "article": "jacket",
+    "img": ["sweater5.png", "sweater4.png"]
+  }
+]

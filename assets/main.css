@@ -1,0 +1,400 @@
+/* ---- global styles ---- */
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background: #e6eefb;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  font-family: 'Barlow', Helvetica, Arial, sans-serif;
+}
+
+#app {
+  font-family: 'Barlow', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+p,
+li {
+  font-family: 'Barlow', sans-serif;
+}
+
+/* Reset `button` and button-style `input` default styles */
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button; /* for input */
+  -webkit-user-select: none; /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.main-button {
+  padding: 10px 30px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 1000px;
+  cursor: pointer;
+  background: white;
+  color: #3e64ea;
+  border: 1px solid #3e64ea;
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
+  margin: 10px;
+  transition: 0.15s all ease-out;
+}
+
+.main-button:hover {
+  background: #3e64ea;
+  color: white;
+  transition: 0.2s all ease-in;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+input[type='email'] {
+  line-height: 24px;
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  height: 24px;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+input::placeholder,
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder,
+input:-moz-placeholder {
+  color: #aab8c3;
+}
+
+/* --------- */
+
+/* ------- NAV ------- */
+
+.navarea {
+  width: 100vw;
+  height: 60px;
+  background: white;
+}
+
+.nav {
+  width: 100vw;
+  height: 60px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height : 100%;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav__item {
+  position: relative;
+  font-style: normal;
+}
+
+.nav__count {
+  font-family: 'Barlow', sans-serif;
+  position: absolute;
+  background: #ff2211;
+  color: white;
+  text-align: center;
+  padding-top: 4px;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  margin: -5px 0 0 20px;
+  border-radius: 1000px;
+  font-weight: 700;
+}
+
+/* ----------*/
+
+/* ------ Global Layout ------- */
+
+.capsule {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  min-height: 100vh;
+  margin-bottom: -60px;
+  position: relative;
+}
+
+.bg-cart {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateX(120%);
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.bg-cart.active {
+  transform: translateX(0)
+}
+
+/* -------- */
+
+/* ---- Items layout ---- */
+
+.product {
+  border-radius: 5px;
+  padding: 20px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.content {
+  /* grid */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 0 ;
+  margin-top: 20px;
+}
+
+.prodruct > p {
+  font-size: 18px;
+}
+
+.color__list{
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+}
+
+.color__item {
+  margin: 0 5px;
+}
+
+.color__button {
+  cursor: pointer;
+}
+
+.color__button:hover .color__circle {
+  stroke: #adccfd;
+}
+.color__circle--activ {
+  stroke: #67a1ff;
+}
+
+.product__input {
+  width: 50px;
+  text-align: center;
+  background-color: #eee;
+  border: 0;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.product__warning {
+  font-style: italic;
+  color: #f95858;
+}
+
+/* --------*/
+
+/* --------- CART ----------- */
+
+.cart__close {
+  margin : 30px;
+  cursor: pointer;
+}
+
+
+.cart {
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 80%;
+  box-shadow: -4px 5px 23px -6px rgba(0,0,0,0.75);
+  transform: translateX(120%);
+  transition: .5s ease-in-out;
+  z-index: 999;
+  min-height: 100vh;
+  background: white;
+}
+
+.cart.active {
+  transform: translateX(0);
+}
+
+.cart__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-top: 10px;
+  padding-bottom: 40px;
+}
+
+.cart__list {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.cart__item {
+  padding: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.cart__item:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 60%;
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.cart__total {
+  margin: 20px 0;
+}
+
+.cart__desc > * {
+  margin: 10px 0;
+}
+
+.cart__text--centered {
+  text-align: center
+}
+
+.cart__text--color > *{
+  vertical-align: middle;
+}
+
+.cart__svg {
+  margin: 0 20px;
+}
+
+.cart__input {
+  width: 50px;
+  text-align: center;
+  background-color: #eee;
+  border: 0;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.main-button--red {
+  color: #f95858;
+  border: 1px solid #f95858;
+}
+
+.main-button--red:hover {
+  color: white;
+  background-color: #f95858;
+}
+
+.main-button--green {
+  color: #73cf1d;
+  border: 1px solid #73cf1d;
+}
+
+.main-button--green:hover {
+  color: white;
+  background-color: #73cf1d;
+}
+
+.viewer {
+  position: relative;
+}
+
+.viewer__wrapper {
+  display: block;
+}
+
+.viewer__button {
+  position: absolute;
+  top: 50%;
+}
+
+.viewer__button--right {
+  right: 0;
+  transform: translate(100%, -50%);
+}
+
+.viewer__button--left {
+  left: 0;
+  transform: translate(-100%, -50%)
+}
+
+@media (min-width: 768px) {
+  .cart__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/*----------*/
+
+/* ---- media queries ---- */
+
+@media (max-width: 600px) {
+  .content {
+    width: 100% ;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
